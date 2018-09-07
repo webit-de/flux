@@ -5,6 +5,24 @@ Flux: Fluid FlexForms
 
 [![Build Status](https://img.shields.io/travis/FluidTYPO3/flux.svg?style=flat-square&label=package)](https://travis-ci.org/FluidTYPO3/flux/) [![Coverage Status](https://img.shields.io/coveralls/FluidTYPO3/flux/development.svg?style=flat-square)](https://coveralls.io/r/FluidTYPO3/flux)  [![Documentation](http://img.shields.io/badge/documentation-online-blue.svg?style=flat-square)](https://fluidtypo3.org/documentation/templating-manual/introduction.html) [![Build Status](https://img.shields.io/travis/FluidTYPO3/fluidtypo3-testing.svg?style=flat-square&label=framework)](https://travis-ci.org/FluidTYPO3/fluidtypo3-testing/) [![Coverage Status](https://img.shields.io/coveralls/FluidTYPO3/fluidtypo3-testing/master.svg?style=flat-square)](https://coveralls.io/r/FluidTYPO3/fluidtypo3-testing)
 
+----------------
+
+:raised_hand: :information_source: This is a fork of the TYPO3 extension 
+»[flux](https://github.com/FluidTYPO3/flux)« to send pull requests.
+
+A patch is build in a single feature branch, then merged into a patch branch 
+of a specfic version and send to official repository as PR eventually.
+
+E.g. »Issue: Fix FAL file field« is fixed in branch »8.2.1_fix-fal-file-field« 
+and merged into »8.2.1_patched«.
+
+To use a patch version instead of the official Flux release use these commands:
+
+    composer config repositories.flux-patch-version vcs https://github.com/webit-de/typo3-flux.git
+    composer require fluidtypo3/flux "dev-8.2.1_patched as 8.2.1"
+
+----------------
+
 > Flux is a replacement API for TYPO3 FlexForms - with interfaces for Fluid, PHP and TypoScript
 
 Flux lets you build and modify forms in Fluid:
